@@ -1,0 +1,33 @@
+vsphere_server        = "192.168.5.152"
+vsphere_user          = "administrator@vsphere.local"
+vsphere_password      = "XXXX"
+vsphere_datacenter    = "DC-HYD"
+vsphere_resource_pool = "mgmt/Resources"
+vsphere_datastore     = "disk2"
+vsphere_network       = "vmmgmt-vlan-90"
+Template_Name         = "Redhat8.6"
+vm_password = "XXXX"
+Master0_VM_NAME       = "master0"
+Master0_Host_Name     = "master0"
+Master0_VM_IP         = "172.90.0.103"
+Master1_VM_NAME       = "master1"
+Master1_Host_Name     = "master1"
+Master1_VM_IP         = "172.90.0.104"
+Master2_VM_NAME       = "master2"
+Master2_Host_Name     = "master2"
+Master2_VM_IP         = "172.90.0.105"
+Worker0_VM_NAME       = "worker0"
+Worker0_Host_Name     = "worker0"
+Worker0_VM_IP         = "172.90.0.106"
+Worker1_VM_NAME       = "worker1"
+Worker1_Host_Name     = "worker1"
+Worker1_VM_IP         = "172.90.0.107"
+Domain_Name           = "kdinesh.in"
+NETMASK               = 24
+DNS_SERVER            = "192.168.5.150"
+Gateway               = "172.90.0.1"
+CPUS                  = 8
+Memory                = 12288
+VMDISK_SIZE           = 100
+
+
