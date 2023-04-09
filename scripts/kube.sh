@@ -1,3 +1,4 @@
+KUBE_VERSION=1.24.0
 cat <<EOF | sudo tee /etc/resolv.conf 
 nameserver 192.168.5.150
 EOF
@@ -37,7 +38,7 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cl
 exclude=kubelet kubeadm kubectl
 EOF
 
-dnf install -y kubelet-1.24.0 -y kubeadm-1.24.0  -y kubectl-1.24.0 --disableexcludes=kubernetes
+dnf install -y kubelet-$KUBE_VERSION -y kubeadm-$KUBE_VERSION  -y kubectl-$KUBE_VERSION --disableexcludes=kubernetes
 
 systemctl enable kubelet
 systemctl start kubelet
