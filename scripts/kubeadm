@@ -1,0 +1,2 @@
+VIP=172.90.0.102
+kubeadm init --control-plane-endpoint "$VIP:8443"  --upload-certs --pod-network-cidr=10.244.0.0/16
