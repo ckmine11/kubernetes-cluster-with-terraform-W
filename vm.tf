@@ -194,7 +194,7 @@ resource "vsphere_virtual_machine" "Master2" {
     connection {
       type     = "ssh"
       user     = "root"
-      password = var.vsphere_password
+      password = var.vm_password
       host     = var.Master1_VM_IP
     }
   }
