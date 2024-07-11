@@ -1,4 +1,4 @@
-KUBE_VERSION=1.24.0
+KUBE_VERSION=1.26.0
 cat <<EOF | sudo tee /etc/resolv.conf 
 nameserver 192.168.5.100
 EOF
@@ -17,7 +17,7 @@ systemctl stop firewalld
 
 systemctl disable firewalld
 
-export VERSION=1.24
+export VERSION=1.26
 
 curl -L -o /etc/yum.repos.d/devel:kubic:libcontainers:stable.repo https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/CentOS_8/devel:kubic:libcontainers:stable.repo
 
@@ -33,10 +33,10 @@ systemctl start crio
 cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
 name=Kubernetes
-baseurl=https://pkgs.k8s.io/core:/stable:/v1.24/rpm/
+baseurl=https://pkgs.k8s.io/core:/stable:/v1.26/rpm/
 enabled=1
 gpgcheck=1
-gpgkey=https://pkgs.k8s.io/core:/stable:/v1.24/rpm/repodata/repomd.xml.key
+gpgkey=https://pkgs.k8s.io/core:/stable:/v1.26/rpm/repodata/repomd.xml.key
 exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
 EOF
 
