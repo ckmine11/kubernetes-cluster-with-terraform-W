@@ -13,6 +13,9 @@ sh -c "echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables"
 
 sh -c "echo '1' > /proc/sys/net/ipv4/ip_forward"
 
+systemctl stop firewalld
+
+systemctl disable firewalld
 
 export VERSION=1.24
 
