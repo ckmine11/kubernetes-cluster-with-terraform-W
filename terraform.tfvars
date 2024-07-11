@@ -26,7 +26,7 @@ Domain_Name           = "cluster.com"
 NETMASK               = 24
 DNS_SERVER            = "192.168.5.100"
 Gateway               = "192.168.5.2"
-CPUS                  = 5
+CPUS                  = 7
 Memory                = 12288
 VMDISK_SIZE           = 120
 
