@@ -6,6 +6,8 @@ MASTER1_HOSTNAME=master1
 MASTER2_HOSTNAME=master2
 VIP=192.168.5.151
 INTERFACE_NAME=ens192
+systemctl stop firewalld
+systemctl disable firewalld
 cat <<EOF | sudo tee /etc/resolv.conf 
 nameserver 192.168.5.100
 EOF
