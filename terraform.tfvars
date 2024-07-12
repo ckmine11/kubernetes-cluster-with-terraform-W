@@ -27,7 +27,7 @@ NETMASK               = 24
 DNS_SERVER            = "192.168.5.100"
 Gateway               = "192.168.5.2"
 CPUS                  = 7
-Memory                = 12288
+Memory                = 16384
 VMDISK_SIZE           = 120
 
 
