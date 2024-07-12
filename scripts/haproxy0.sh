@@ -83,7 +83,7 @@ maxconn 3000
 # apiserver frontend which proxys to the masters
 #---------------------------------------------------------------------
 frontend apiserver
-bind *:6443
+bind *:8443
 mode tcp
 option tcplog
 default_backend apiserver
