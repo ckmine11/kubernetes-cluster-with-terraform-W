@@ -102,4 +102,4 @@ server $MASTER2_HOSTNAME $MASTER2IP:6443 check
 EOF
 
 systemctl restart haproxy && systemctl enable haproxy
-
+setsebool -P haproxy_connect_any 1
